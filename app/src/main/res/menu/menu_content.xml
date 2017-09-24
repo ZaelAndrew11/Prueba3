@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cl.aguzman.prueba3.views.ContentActivity">
+
+    <item
+        android:id="@+id/action_perfil"
+        android:title="Perfil"
+        app:showAsAction="never"/>
+
+</menu>

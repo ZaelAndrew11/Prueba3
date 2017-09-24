@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/fab_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/taleTextContent"
+            android:textSize="@dimen/text_h3"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/taleTextAuthor"
+            android:textSize="@dimen/text_h3"
+            android:textStyle="italic"
+            android:textColor="@color/colorPrimary"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"/>
+
+        <Button
+            android:id="@+id/addFavBtn"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:padding="@dimen/fab_margin"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/auth_method_button_drawablePadding"
+            android:drawableRight="@mipmap/ic_favorite_border_white_24dp"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

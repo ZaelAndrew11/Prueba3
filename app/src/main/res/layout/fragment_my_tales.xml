@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="1dp"
+    tools:context=".views.main.list.ListMyTalesFragment">
+
+    <TextView
+        android:id="@+id/notMyTalesTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/fab_margin"
+        android:text="@string/not_my_tales_text_view" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/myListTaleRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="24dp"
+    tools:context="cl.aguzman.prueba3.views.PerfilActivity">
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:id="@+id/avatarIv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:siBorderColor="@android:color/white"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="24dp"
+        app:siBorderWidth="2dp" />
+
+    <TextView
+        android:id="@+id/userNameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/avatarIv"
+        android:layout_marginRight="24dp"
+        android:textSize="@dimen/text_h3"
+        android:ellipsize="end"
+        android:text="User Name"
+        android:layout_marginTop="@dimen/fab_margin"/>
+
+    <TextView
+        android:id="@+id/userEmailTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/avatarIv"
+        android:layout_below="@+id/userNameTv"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="24dp"
+        android:textStyle="italic"
+        android:text="User Email" />
+
+
+    <Button
+        android:id="@+id/logoutUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:drawableRight="@mipmap/ic_exit_to_app_white_24dp"
+        android:padding="@dimen/fab_margin"
+        android:text="Cerrar Sesión"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>
