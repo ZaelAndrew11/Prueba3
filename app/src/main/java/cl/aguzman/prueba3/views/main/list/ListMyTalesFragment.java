@@ -15,6 +15,7 @@ import android.widget.TextView;
 import cl.aguzman.prueba3.R;
 import cl.aguzman.prueba3.adapters.ContentCallback;
 import cl.aguzman.prueba3.adapters.ListTalesAdapter;
+import cl.aguzman.prueba3.data.CurrentUser;
 import cl.aguzman.prueba3.data.Nodes;
 import cl.aguzman.prueba3.views.ContentActivity;
 
@@ -43,7 +44,7 @@ public class ListMyTalesFragment extends Fragment implements ContentCallback {
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.myListTaleRv);
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
         recyclerView.setHasFixedSize(true);
-        adapter = new ListTalesAdapter(this, new Nodes().mytalesref());
+        adapter = new ListTalesAdapter(this, new Nodes().talesRef().orderByChild("uid").equalTo(new CurrentUser().getCurrentUid()));
         recyclerView.setAdapter(adapter);
     }
 
